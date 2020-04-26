@@ -1,0 +1,78 @@
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css";
+.title-wrapper h1 {text-align:center;padding: 20px;margin: -20px -20px 20px;border-bottom: #E5E5E5 2px solid;}
+.wrap h2 {padding-bottom: 10px;border-bottom: 2px solid #19abea;margin-bottom: 20px;}
+.deskripsi {margin-bottom: 20px;opacity: .9;font-size: 90%;}
+#kerjakan {padding:15px 30px;margin:0 auto;font-size:105%;font-weight:bold;letter-spacing:1px}
+#selesaicepat {font-size: 110%;padding: 15px 30px;text-align: center;margin-top: 30px;}
+#skorUTBK{padding:20px;position:relative;background:#19abea;overflow:hidden;cursor:pointer;text-align:center;margin-bottom:20px;color:#fff;font-weight:900;font-size:125%}
+#skorUTBK:hover{background:#0d8bc1}
+#hasilUTBK{color:#fff;padding:20px;position:absolute;right:0;top:50%;transform:translate(0,-50%);background:#25a58e;width:100%}
+.post-outer{background:#fafafa}
+.hide {display:none !important}
+.modar {margin-right:-100%}
+section{position:relative;padding:20px;width:100%;float:left;background:#fff;border:1px solid #eee}
+section.item-incorrect{background:#f6f6f6}
+section.item-incorrect:before{position:absolute;z-index:399;bottom:0;right:0;content:"";height:0;width:0;border:35px solid;border-color:transparent #ff5c61 #ff5c61 transparent}
+section.item-incorrect:after{line-height:1.4;position:absolute;z-index:499;content:"X";bottom:0;right:7px;font-size:1.9em;color:#ff383e}
+section.item-correct:before{position:absolute;z-index:399;bottom:0;right:0;content:"";height:0;width:0;border:35px solid;border-color:transparent #48d7bd #48d7bd transparent}
+section.item-correct:after{line-height:1.4;position:absolute;z-index:499;content:"V";bottom:0;right:7px;font-size:1.9em;color:#2dceb1}
+input[type="radio"]{position:absolute;visibility:hidden}
+input[type="radio"] + label{background:#fff;display:block;padding:5px 15px;margin:5px 10px 5px 0;border:1px solid #eee;-webkit-transition:all .1s linear;-moz-transition:all .1s linear;transition:all .1s linear}
+input[type="radio"] + label:before{content:"\f10c";font-family:'fontawesome';margin-right:7px;color:#2dceb1}
+input[type="radio"] + label:hover{cursor:pointer}
+input[type="radio"]:checked + label{background:#50d9c0;color:#1f8f7b}
+input[type="radio"]:checked + label:before{content:"\f192";color:#1f8f7b}
+.question{font-weight:700;margin-bottom:20px}
+.submit{width:100%;display:inline-block}
+.submit button{display:none;outline:none;margin:auto;padding:20px 30px;font-weight:900;border:1px solid #eee}
+#emc-score{display:inline-block;width:100%;text-align:center;opacity:0;padding:0;-webkit-transition:all .55s ease;-moz-transition:all .55s ease;transition:all .55s ease}
+#emc-score.new-score{opacity:1;background:#2dceb1;color:#fbfbfb;padding:20px;font-size:110%}
+#emc-submit, #kerjakan, #kontak #ContactForm1_contact-form-submit, #selesaicepat{position:relative;-webkit-transition:all .33s ease;-moz-transition:all .33s ease;transition:all .33s ease;cursor:pointer}
+#emc-submit.ready-show, #kerjakan, #kontak #ContactForm1_contact-form-submit, #selesaicepat{display:block;background:#2dceb1;color:#fff;border:none;border-bottom:2px solid #26af96;box-shadow:0 1px 1px rgba(68,68,68,0.2)}
+#emc-submit.ready-show:hover, #kerjakan:hover, #kontak #ContactForm1_contact-form-submit:hover, #selesaicepat:hover{color:#fbfbfb;background:#27b198;border-color:#1f8f7b}
+#emc-submit.ready-show:active, #kerjakan:active, #kontak #ContactForm1_contact-form-submit:active, #selesaicepat:active{top:2px;border-bottom:none}
+#emc-progress{height:100%;border:1px solid #1f8f7b;background:#2dceb1}
+#emc-progress_inner{width:100%;height:0;background:#1f8f7b;-webkit-transition:height .33s cubic-bezier(0.68,-0.55,0.265,1.55);-moz-transition:height .33s cubic-bezier(0.68,-0.55,0.265,1.55);transition:height .33s cubic-bezier(0.68,-0.55,0.265,1.55)}
+#emc-progress_ind{position:absolute;display:block;width:100%;font-size:.7em;font-weight:700;padding:7px 5px 5px;top:0;left:0;text-align:center;color:#1f8f7b}
+.wrap {margin-bottom:20px;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.jenis-menu{margin:20px 0;display:inline-block;width:100%}
+.jenis-menu li a{width:100%;padding:15px 20px;border-radius:5px;float:left;background:#19abea;color:#fff}
+.jenis-menu li{list-style:none;margin:0;padding:5px;float:left}
+.jenis-menu ul{display:grid;grid-template-columns:50% 50%}
+@media screen and (max-width:500px) {
+.jenis-menu ul{grid-template-columns:100%}
+}
+.jenis-menu li:hover{cursor:pointer}
+.jenis-menu ul li a.active-a{background:#0d8bc1}
+.jenis{display:none}
+.jenis-active{display:block}
+.nomorsoal {margin-right: 10px;float: left;font-weight:bold}
+#kotakwaktu span {float: right;width: 100%;}
+#kotakwaktu, #kotakwaktu * {transition: none !important;}
+.mengkerut {height: 0;overflow: hidden;margin-top: 0;}
+.soalavail {pointer-events: unset;background: #19abea;}
+.soalunavail {pointer-events: none !important;background:#e05d5d !important;}
+#tps1:after {content: "35 menit";}
+#tps2:after {content: "25 menit";}
+#tps3:after {content: "25 menit";}
+#tps4:after {content: "35 menit";}
+#tps1:after, #tps2:after, #tps3:after, #tps4:after {margin-top: 20px;font-size: 80%;display: block;}
+#kontak p {text-align: center;font-size: 150%;margin: 40px 0 40px;}
+#kontak span {font-size: 90%;margin: 10px 0 0;display: block;}
+#kontak span:not(.syarat):after {content: "*";color: red;}
+#kontak input, #kontak textarea {border-radius:50px;margin: 5px 0;padding: 15px;background: #19abea;border: none;color: white;}
+#kontak #ContactForm1_contact-form-submit {margin-bottom: 20px;margin-top:20px}
+#kontak textarea {display: none;}
+#kontak .contact-form-error-message-with-border{padding:20px;background:#ff4646;position:relative;color:#fff}
+#kontak .contact-form-error-message-with-border img{width:15px;right:0;position:absolute;top:0}
+#kontak .contact-form-success-message-with-border{padding:20px;background:#3bb975;color:#fff}
+#kontak #ContactForm1_contact-form-name, #kontak #ContactForm1_contact-form-email {font-size: 70%;}
+.jawaban {margin-bottom:20px}
+.selanjutnya {text-align: right;float: right;}
+.sebelumnya {float: left;}
+.selanjutnya, .sebelumnya {border-radius: 5px;background: #19abea;padding: 10px 15px;color: white;font-size:90%}
+.selanjutnya:hover, .sebelumnya:hover {color: white;cursor: pointer;background: #0d8bc1;}
+.selesai-atas {text-align: center;font-size: 200%;margin: 30vh 0 0;}
+.selesai-bawah {text-align: center;margin: 10vh 0;}
+#blog-pager, .svg-jarwo-share, #navigation, form#search-form, #post-info, .breadcrumbs {display: none; }  
+.post-outer {padding: 20px 20px 0;}
